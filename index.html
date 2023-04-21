@@ -15,11 +15,21 @@
 <body>
     
     <div id="app">
-        <ul>
-            <li v-show="emails.length == quantity" v-for="(email, index) in emails">
-                {{ emails[index] }}
-            </li>
-        </ul>
+        <div class="container d-flex justify-content-center flex-wrap py-5">
+
+            <div class="box">
+                <button type="button" class="btn btn-warning" @click="activateApi"> generate emails </button>
+            </div>
+
+            <div class="my-4">
+                <ul>
+                    <li v-show="emails.length == quantity" v-for="(email, index) in emails">
+                        {{ emails[index] }}
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </div>
    
     <!-- api -->
