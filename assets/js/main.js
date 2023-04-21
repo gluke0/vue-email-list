@@ -19,6 +19,10 @@ createApp({
                     this.emails.unshift(email);
                 })
             }
-        }
+        },
+
+        erase(emails){
+            this.emails.splice(emails, emails.length)
+        },
     }
 }).mount('#app')
